@@ -1,9 +1,14 @@
-//alert("JavaScript works!");
+/*
+Wesley Wood
+09/18/2014
+Project 3
+*/
 
-// Wesley Wood
-// SDI 201409
-// Project 3
+// global variables
 
-var myName = Wesley;
+var friend1 = "Kevin";
+var friend2 = "Ryan";
+var myName = "Wesley";
+var miles = 10;
+var place = true;
 
-console.log("my name is " + myName);
