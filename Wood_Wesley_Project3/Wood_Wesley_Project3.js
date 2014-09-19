@@ -27,7 +27,7 @@ function inputFriends()
 // while loop
 function fishCaught()
 {
-    var totalFish = 0;
+    var totalFish = 0;// local variable
     while (fish > 0)
     {
         var fish = prompt("How many fish have you caught?");
@@ -43,7 +43,7 @@ function fishCaught()
 // for loop
 function milesDriven()
 {
-        for(var miles = 10; miles > 0; miles -= 1)
+        for(var miles = 10; miles > 0; miles -= 1)//local variable
     {
             miles--
             console.log("Your miles to go has dropped to " + miles + ".");
@@ -74,7 +74,7 @@ var read = prompt("Are you ready to continue?");
 
 if (place === true)
 {
-        timeDriven = timeDriven + 15;
+        timeDriven = 15;
         if (place2 === true)
         {
                 timeDriven = timeDriven + 15;
@@ -89,3 +89,31 @@ else
 {
         console.log("Your total time driven stayed the same at " + timeDriven + " minutes.");
 }
+
+console.log("\n\nIf we go fishing at both places, we will taken an additional 15 minutes driving.")
+//miles driven function
+milesDriven();
+
+console.log("\n\nWe will catch a lot of fish.");
+// fish caught function
+fishCaught();
+
+
+var addFish = function(firstFish, secondFish)
+{
+        var amount = firstFish * secondFish;
+        return outcome;
+};
+var fishLoop = function()
+{
+    
+};
+
+console.log("Everytime you catch a fish it add a fish to" + fishCaught);
+console.log("When you catch a bigger fish people come from a distance to see.");
+returnValue = addFish(2,3);
+console.log("\n\nYour total fish caught are " + returnValue);
+returnValue = addFish (4, 6);
+console.log("Your new total fish caught is" + returnValue);
+
+//argument
