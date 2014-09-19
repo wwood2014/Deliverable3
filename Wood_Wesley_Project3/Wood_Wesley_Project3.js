@@ -117,3 +117,37 @@ returnValue = addFish (4, 6);
 console.log("Your new total fish caught is" + returnValue);
 
 //argument
+var fishSpots = ["Bokeelia", " Punta Rassa", " Matlacha"];//array
+var timePerSpot = [30, 15, 25]//number for array
+
+var useOneSpot = function(spotName, timePerSpot)
+{
+        console.log("\n\nWe chose" + spotName + " fishing spot " + timePerSpot + " minutes were spent fishing.");
+        
+        for (var time = 70; time < timePerSpot; time += 15)
+        {
+                var timeLeft = timePerSpot - time;
+                console.log(time + "finished" + timeLeft + "remaining");
+        }
+        console.log("The " + spotName + " has been chosen!");
+};
+useOneSpot(fishSpots, timePerSpot);
+//argument
+
+console.log("After fishing for 4 hours, we start running out of bait.");
+//Math
+var buyBait = function(total)
+{
+        var priceForBait = 5;
+        var bait;
+        
+        if (total < priceForBait)
+        {
+                console.log("You don't have enough money to buy bait.");
+                return;
+        }
+        bait = Math.floor(total / priceForBait);
+        return bait;
+};
+var gotBait = buyBait(50);
+console.log("You bought " + gotBait + " bait.");
