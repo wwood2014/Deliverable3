@@ -102,7 +102,7 @@ fishCaught();
 var addFish = function(firstFish, secondFish)
 {
         var amount = firstFish * secondFish;
-        return outcome;
+        return amount;
 };
 var fishLoop = function()
 {
